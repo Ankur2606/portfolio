@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <script src="https://kit.fontawesome.com/8d15cf4f06.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <!-- <div class="nav1"> -->
+            <nav>
+                <a href="#"><img src="images/my logo.png" class="logo" alt="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Work</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark fas1" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas1" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>ML Enthusiast</p>
+                <h1>Hey, I am <br>Bhavya Pratap</h1>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <!-- ----------------------------top slider------- -->
+
+
+    <!-- ---------------about ------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/bhavya ki photuu.jfif" alt="My picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p><img src="https://readme-typing-svg.herokuapp.com/?font=Time+New+Roman&color=cyan&size=25&center=true&vCenter=true&width=600&height=100&lines=Greetings+my+Fellow+Developer..&hearts;++;Sophomore+pursuing+Specialization+in+AIML,;Research+Blogger,;Devops+Enthusiast,;Active+Learner/Researcher,;Love+to+learn+new+stuff..<3"></p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Deep Learning</span><br> CNN | RNN | LSTM | GANs | NLP |
+                                PyTorch </li>
+                            <li><span>Gen AI</span><br>NMT | LLM | Open AI Api | Lang chain | LLaMA 2</li>
+                            <li><span>DevOps</span><br> Docker | Kubernetes | AWS | GCP | Git/Github</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Present</span><br>BTech in Artificial Intelligence & Machine Learning</li>
+                            <li><span>2022</span><br>CBSE Board 12th [PCM stream]</li>
+                            <li><span>2020</span><br>CBSE Board 10th</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="scroll-to-top">
+        <i class="arrow up"></i>
+    </div>
+
+    <!-- --------------------services  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Research blog</h2>
+                        <br>
+                    <p>Blog on geospatial Avalanche Hazard Assessment and AI-Driven
+                        Mitigation Advisor Technology</p>
+                    <a href="https://medium.com/@bhavyapratapsinghtomar/geospatial-avalanche-hazard-assessment-and-ai-driven-mitigation-advisor-technology-495c0c90069a">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------portfolio------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/text summarizer.png" alt="">
+                    <div class="layer">
+                        <h3>Text Summarizer</h3>
+                        <p>A versatile NLP-driven Text Summarization Tool for accurate and concise summaries across diverse textual content.</p>
+                        <a href="https://github.com/Ankur2606/Text-Summarizer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/qna bot.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Abstractive Q&A Bot</h3>
+                        <p>An enhanced question-answering system
+                            with optimized vector storage, user-friendly sentence formatting
+                            and efficient all-dataset retrieval capabilities.</p>
+                        <a href="https://github.com/Ankur2606/Abstractive-QnA-Bot"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/llama qt.png" alt="">
+                    <div class="layer">
+                        <h3>RAG-Enhanced Chatbot</h3>
+                        <p>Develop a highly responsive chatbot using RAG, LangChain, and ChromaDB for dynamic conversational
+                            interactions</p>
+                        <a href="https://github.com/Ankur2606/Personal-Chatbot-Using-Langchain"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- --------------------contact----- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>bhavyapratapsinghtomar@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>Liebner Zeneolite#4640</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/bhavya-pratap-singh-tomar-a05124229/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Ankur2606"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/Decent_Sanage"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/plain_boomer/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <dic class="copyright">
+            <p>Copyright © Bhavya <i class="fa-regular fa-heart"></i></p>
+        </dic>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+
+
+
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzaqHBUkBWi_XLYZgexrA5BdRRQh81q8VvYoxVrDg0IgeBqrOVwHpTHIsqhUHRTu-qy/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+
+        document.getElementById("scroll-to-top").addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <div id = header>
+        <div class="container">
+            <nav>
+                <img src="#" alt="" class = "logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </nav>
+                <div class="header-text">
+                    <p>
+                        <h1>Hi , I'm Bhavya Pratap Singh Tomar</h1>
+                            <a href="https://github.com/Ankur2606">
+        <img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=white&size=25&center=true&vCenter=true&width=600&height=100&lines=Greetings+my+Fellow+Developer..&hearts;++;Sophomore+pursuing+Specialization+in+AIML,;Research+Blogger,;Devops+Enthusiast,;Active+Learner/Researcher,;Love+to+learn+new+stuff..<3"></a>
+        </p>
+                    
+                </div>
+        </div>
+    </div>
+
+</body>
+</html> -->
+
