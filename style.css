@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background:linear-gradient(to bottom, rgb(23, 15, 30),black);;
+    background:linear-gradient(to bottom, rgb(23, 15, 30),black);
     color: blanchedalmond;
 }
 .header{
@@ -45,7 +45,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: blanchedalmond;
+    color: linear-gradient(to bottom, rgb(23, 15, 30),black);
     text-decoration: none;
     font-size: 18px;
     position: relative;
